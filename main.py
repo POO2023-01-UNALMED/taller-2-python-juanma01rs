@@ -31,12 +31,12 @@ class Auto:
         for asiento in self.asientos:
             if (asiento != None):
                 if (asiento.registro != self.registro):
-                    return "Las piezas no son originales"
+                    return 'Las piezas no son originales'
                 
         if (self.motor.registro != self.registro):
-            return "Las piezas no son originales"
+            return 'Las piezas no son originales'
         
-        return "Auto original"
+        return 'Auto original'
 
 class Motor:
     def __init__(self, numeroCilindros, tipo, registro):
@@ -50,7 +50,7 @@ class Motor:
             self.registro = nuevo_registro
     
     def asignarTipo(self, tipo):
-        tipo = str(input())
-        if (tipo == "electrico") or (tipo == "gasolina"):
+        valor = ['electrico', 'gasolina']
+        if tipo in valor:
             self.tipo = tipo
         
