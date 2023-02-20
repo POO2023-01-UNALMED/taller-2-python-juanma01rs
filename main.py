@@ -44,10 +44,10 @@ class Motor:
         self.tipo = tipo
         self.registro = registro
 
-    def cambiarRegistro(self, registro):
-        registro = int()
-        if (registro != self.registro):
-            self.registro = registro
+    def cambiarRegistro(self):
+        nuevo_registro = int()
+        if (nuevo_registro != self.registro):
+            self.registro = nuevo_registro
         
     def asignarTipo(self, tipo):
         valor = ['electrico', 'gasolina']
