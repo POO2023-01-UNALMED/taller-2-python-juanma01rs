@@ -5,7 +5,7 @@ class Asiento:
         self.registro = registro
         
     def cambiarColor(self, color):
-        color = input()
+        color = str(input())
         if (color == 'rojo') or (color == 'verde') or (color == 'amarillo') or (color == 'negro') or (color == 'blanco'):
             self.color = color
 
@@ -43,9 +43,10 @@ class Motor:
         nuevo_registro = int(input())
         if (nuevo_registro != registro):
             self.registro = nuevo_registro
-
+        return self.registro
+    
     def asignarTipo(self, tipo):
-        valor = input()
+        valor = str(input())
         if (valor == 'electrico') or (valor == 'gasolina'):
             self.tipo = valor
         else: 
