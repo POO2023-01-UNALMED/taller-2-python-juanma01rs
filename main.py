@@ -45,7 +45,7 @@ class Motor:
         self.registro = registro
 
     def cambiarRegistro(self, registro):
-        nuevoregistro = int(input())
+        nuevoregistro = int()
         if (nuevoregistro != registro):
             self.registro = nuevoregistro
         else:
